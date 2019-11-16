@@ -12,5 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('upload');
 });
+
+Route::get('/s3-url', 'SignedS3UrlCreatorController@index');
